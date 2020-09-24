@@ -18,6 +18,8 @@ firebase.auth().onAuthStateChanged(user => {
   }
 });
 
+alert('before hide');
+
 /*firebase.auth()
   .signInWithEmailAndPassword(
     "junk@novocin.com", 
