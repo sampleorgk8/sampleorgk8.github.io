@@ -15,6 +15,7 @@ firebase.initializeApp(firebaseConfig);
 firebase.auth().onAuthStateChanged(user => {
   if (!!user){
     alert(`${user.displayName || user.email} ${user.uid}`);
+      alert('before hide');
   }
 });
 
