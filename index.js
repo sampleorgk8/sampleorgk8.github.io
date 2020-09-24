@@ -18,19 +18,22 @@ firebase.auth().onAuthStateChanged(user => {
   }
 });
 
-firebase.auth()
+/*firebase.auth()
   .signInWithEmailAndPassword(
     "junk@novocin.com", 
     "fartfart"
    ).catch(function(error) {
           alert(error.message);
    }
-);
+);*/
 
 // site navigation
 $("#loginpage").hide();
+alert("hid login");
 $("#regpage").hide();
+alert("hid reg");
 $("#success").hide();
+alert("hid success");
 
 
 $('#loginredir').click(()=>{
