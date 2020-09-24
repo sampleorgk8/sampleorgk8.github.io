@@ -1,1 +1,50 @@
-<p>here is my site!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Auth example</title>
+  <script src='https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js'>
+  <script src='https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js'>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'>
+  <script src='index.js'>
+</head>
+<body>
+  <div id='welcome'>
+    <h1>Welcome!</h1>
+    <h2>For returning users: </h2>
+    <button id='loginredir'>Log In</button>
+    <h2>New user?</h2>
+    <button id='regredir'>Register</button>
+  </div>
+
+  <div id='loginpage' disabled='true'>
+    <p>email address:</p>
+    <input type='email' id='logemail' />
+    <p>password:</p>
+    <input type='password' id ='password' />
+    <br /><br />
+    <button id='login'>login</button>
+    <br />
+    <p>forgot password?</p>
+    <button id='reset'>reset password</button>
+  </div>
+
+  <div id='regpage'>
+    <p>email address:</p>
+    <input id='regemail' />
+    <p>password:</p>
+    <input type='password' id ='password1' />
+    <p>confirm password:</p>
+    <input type='password' id ='password2' />
+    <br /><br />
+    <button id='register'>register</button>
+    <br /><br />
+    <button id='regloginredir'>log In</button>
+  </div>
+  <div id='success'>
+    <h1>Welcome!</h1>
+    <h2>You have successfully logged in.</h2>
+    <p>Welcome to this wonderful website!! :)</p>
+  </div>
+</body>
+</html>
