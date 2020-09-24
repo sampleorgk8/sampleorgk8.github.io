@@ -15,20 +15,19 @@ firebase.initializeApp(firebaseConfig);
 firebase.auth().onAuthStateChanged(user => {
   if (!!user){
     alert(`${user.displayName || user.email} ${user.uid}`);
-      alert('before hide');
   }
 });
 
 alert('before hide');
 
-/*firebase.auth()
+firebase.auth()
   .signInWithEmailAndPassword(
     "junk@novocin.com", 
     "fartfart"
    ).catch(function(error) {
           alert(error.message);
    }
-);*/
+);
 
 // site navigation
 $("#loginpage").hide();
