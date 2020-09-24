@@ -18,8 +18,6 @@ firebase.auth().onAuthStateChanged(user => {
   }
 });
 
-alert('before hide');
-
 firebase.auth()
   .signInWithEmailAndPassword(
     "junk@novocin.com", 
@@ -31,11 +29,8 @@ firebase.auth()
 
 // site navigation
 $("#loginpage").hide();
-alert("hid login");
 $("#regpage").hide();
-alert("hid reg");
 $("#success").hide();
-alert("hid success");
 
 
 $('#loginredir').click(()=>{
